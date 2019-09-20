@@ -20,7 +20,7 @@ A Python wrapper for FinnPos, a morphological tagging and lemmatization toolkit.
 
 
 * Free software: GNU General Public License v3
-* Documentation: https://finnwrap.readthedocs.io.
+.. * Documentation: https://finnwrap.readthedocs.io.
 
 
 Features
