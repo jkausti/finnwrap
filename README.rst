@@ -16,7 +16,7 @@ finnwrap
 
 
 
-A Python wrapper for FinnPos, a morphological tagging and lemmatization toolkit.
+A Python wrapper for FinnPos, a morphological tagging and lemmatization toolkit. This software requires that the FinnPos package is installed and that the 'ftb-label' -command is callable from the command line. See https://github.com/mpsilfve/FinnPos/wiki for more information about building, installing and using FinnPos.
 
 
 * Free software: GNU General Public License v3
