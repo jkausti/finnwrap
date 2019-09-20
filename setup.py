@@ -34,11 +34,11 @@ setup(
         'Programming Language :: Python :: 3.7',
     ],
     description="A Python wrapper for FinnPos, a morphological tagging and lemmatization toolkit.",
-    entry_points={
-        'console_scripts': [
-            'finnwrap=finnwrap.cli:main',
-        ],
-    },
+    #entry_points={
+    #    'console_scripts': [
+    #        'finnwrap=finnwrap.cli:main',
+    #    ],
+    #},
     install_requires=requirements,
     license="GNU General Public License v3",
     long_description=readme + '\n\n' + history,
