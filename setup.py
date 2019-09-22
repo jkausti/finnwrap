@@ -11,11 +11,11 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['Click>=7.0', ]
+requirements = ['Click>=7.0', 'spacy>=2.0.16', 'json>=2.0.9', 'pytest>=3.8.2']
 
 setup_requirements = [ ]
 
-test_requirements = [ ]
+test_requirements = ['Click>=7.0', 'spacy>=2.0.16', 'json>=2.0.9', 'pytest>=3.8.2']
 
 setup(
     author="John Kaustinen",
