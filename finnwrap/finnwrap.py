@@ -74,6 +74,6 @@ class Finnwrap():
 
 if __name__ == '__main__':
     
-    fw = Finnwrap()
-    fp = fw.analyze(['Leijat helsingin yllä. Leijat lensivät.', 'Ajatuspaja libera.'])
-    print(fp.getJson().decode('utf-8'))
+    fw = Finnwrap(['Leijat helsingin yllä. Leijat lensivät.', 'Ajatuspaja libera.'])
+    fw.analyze()
+    print(fw.fp.getJson().decode('utf-8'))
