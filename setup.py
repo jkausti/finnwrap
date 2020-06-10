@@ -20,18 +20,17 @@ test_requirements = ['spacy>=2.0.16', 'pytest>=3.8.2']
 setup(
     author="John Kaustinen",
     author_email='jokausti@gmail.com',
-    python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*',
+    python_requires='>=3.5, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Natural Language :: English',
-        "Programming Language :: Python :: 2",
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Operating System :: Linux'
     ],
     description="A Python wrapper for FinnPos, a morphological tagging and lemmatization toolkit.",
     #entry_points={
@@ -39,6 +38,7 @@ setup(
     #        'finnwrap=finnwrap.cli:main',
     #    ],
     #},
+    py_modules=["finnwrap", "finnpos"]
     install_requires=requirements,
     license="GNU General Public License v3",
     long_description=readme + '\n\n' + history,
