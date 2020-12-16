@@ -8,8 +8,8 @@ from setuptools import setup, find_packages
 with open('README.rst') as readme_file:
     readme = readme_file.read()
 
-with open('HISTORY.rst') as history_file:
-    history = history_file.read()
+#with open('HISTORY.rst') as history_file:
+#    history = history_file.read()
 
 requirements = ['spacy>=2.0.16', 'pytest>=3.8.2']
 
@@ -38,10 +38,10 @@ setup(
     #        'finnwrap=finnwrap.cli:main',
     #    ],
     #},
-    py_modules=["finnwrap", "finnpos"]
+    py_modules=["finnwrap", "finnpos"],
     install_requires=requirements,
     license="GNU General Public License v3",
-    long_description=readme + '\n\n' + history,
+    long_description=readme,
     include_package_data=True,
     keywords='finnwrap',
     name='finnwrap',
