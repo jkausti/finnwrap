@@ -43,9 +43,12 @@ setup(
     license="GNU General Public License v3",
     long_description=readme,
     include_package_data=True,
+    package_data={
+        '': ['finnpos/*']
+    },
     keywords='finnwrap',
     name='finnwrap',
-    packages=find_packages(include=['finnwrap', 'finnwrap.*']),
+    packages=find_packages(include=['src', 'finnwrap', 'finnwrap.*']),
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,

@@ -40,9 +40,11 @@ class Finnwrap():
         
         preprocessed = self._preprocess_input(scope)
         analyzed = []
+
+        args = './ftb-label'
         
         for doc in preprocessed:
-            process = Popen(['ftb-label'], stdin=PIPE, stdout=PIPE, stderr=PIPE)
+            process = Popen([args], stdin=PIPE, stdout=PIPE, stderr=PIPE)
             stdout, stderr = process.communicate(input=doc.encode('utf-8'))
             analyzed.append(stdout.decode())
         
@@ -74,6 +76,6 @@ class Finnwrap():
 
 if __name__ == '__main__':
     
-    fw = Finnwrap(['Leijat helsingin yllä. Leijat lensivät.', 'Ajatuspaja libera.'])
+    fw = Finnwrap(['Leijat helsingin yllä.'])
     fw.analyze()
     print(fw.fp.getJson().decode('utf-8'))
